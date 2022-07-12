@@ -1,40 +1,41 @@
 
-"-------- Plugins -----------------
-
+"===== Plugins ========================
 call plug#begin()
-Plug 'scrooloose/nerdtree'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'sainnhe/everforest'
-Plug 'sainnhe/sonokai'
-Plug 'ayu-theme/ayu-vim'
-Plug 'dracula/vim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
 Plug 'williamboman/nvim-lsp-installer'
+Plug 'windwp/nvim-autopairs'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+
 "Plug 'karb94/neoscroll.nvim'
+
+Plug 'sainnhe/everforest'
+Plug 'sainnhe/sonokai'
+Plug 'ayu-theme/ayu-vim'
+Plug 'dracula/vim'
 call plug#end()
+"======================================
 
-"---------------------------------
 
-
-"-------- Key mappings -------------------
-
+"===== Key maps =======================
 let mapleader = " "
- 
 " esc in insert and visual mode
 inoremap jk <esc>
 vnoremap jk <esc>
 " esc in command mode
 cnoremap jk <esc>
-nnoremap <silent> <leader>f :FZF<cr>
+" noremap <silent> <leader>f :FZF<CR>
 nnoremap <F3> :set hlsearch!<CR>
-"-----------------------------------------
+nnoremap <leader>so :so $NVIMINIT<CR>
+"=======================================
 
 
-"--------- Settings -----------------
+"====== Colours ======================
 if has('termguicolors')
   set termguicolors
 endif
@@ -52,7 +53,10 @@ endif
 "colorscheme ayu
 
 colorscheme dracula
+"====================================
 
+
+"======= Sets ==============
 set relativenumber 
 set number
 set nohlsearch
