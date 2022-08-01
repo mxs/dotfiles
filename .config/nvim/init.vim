@@ -73,6 +73,7 @@ set expandtab
 set incsearch
 set cc=80
 set cursorline
+set cursorcolumn
 set clipboard+=unnamedplus
 set noswapfile
 
