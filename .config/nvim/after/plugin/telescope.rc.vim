@@ -31,13 +31,13 @@ require('telescope').setup {
 require('telescope').load_extension('fzf')
 EOF
 
-nnoremap <silent><leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap <silent><leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <silent><leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
-nnoremap <silent><leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
-nnoremap <silent><leader>fgs <cmd>lua require('telescope.builtin').git_status()<cr>
-nnoremap <silent><leader>fs <cmd>lua require('telescope.builtin').lsp_document_symbols()<cr>
-nnoremap <silent><leader>fr <cmd>lua require('telescope.builtin').lsp_references()<cr>
-nnoremap <silent><leader>ft <cmd>lua require('telescope.builtin').treesitter()<cr>
+nnoremap <silent><leader>f <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <silent><leader>g <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <silent><leader>b <cmd>lua require('telescope.builtin').buffers()<cr>
+"nnoremap <silent><leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+"nnoremap <silent><leader>fgs <cmd>lua require('telescope.builtin').git_status()<cr>
+"nnoremap <silent><leader>fs <cmd>lua require('telescope.builtin').lsp_document_symbols()<cr>
+nnoremap <silent><C-r> <cmd>lua require('telescope.builtin').lsp_references()<cr>
+nnoremap <silent><C-t> <cmd>lua require('telescope.builtin').treesitter()<cr>
 nnoremap <silent><leader>;; <cmd>lua require('telescope.builtin').resume()<cr>
 nnoremap <silent><leader>;e <cmd>lua require('telescope.builtin').diagnostics()<cr>
