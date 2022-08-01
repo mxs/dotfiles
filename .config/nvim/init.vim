@@ -14,6 +14,11 @@ Plug 'folke/trouble.nvim'
 Plug 'windwp/nvim-autopairs'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
 
 "Plug 'karb94/neoscroll.nvim'
 
@@ -76,6 +81,8 @@ set cursorline
 set cursorcolumn
 set clipboard+=unnamedplus
 set noswapfile
+set completeopt=menu,menuone,noselect
+set guicursor+=a:blinkon0
 
 " lspconfig {{{
 lua << EOF
