@@ -21,7 +21,7 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
-
+Plug 'akinsho/toggleterm.nvim', { 'tag' : 'v2.*' }
 "Plug 'karb94/neoscroll.nvim'
 
 Plug 'sainnhe/everforest'
@@ -42,6 +42,8 @@ cnoremap jk <esc>
 " noremap <silent> <leader>f :FZF<CR>
 nnoremap <F3> :set hlsearch!<CR>
 nnoremap <leader>so :so $NVIMINIT<CR>
+nnoremap <C-w> :q<CR>
+nnoremap <C-W> :qa!<CR>
 "=======================================
 
 
