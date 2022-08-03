@@ -17,10 +17,6 @@ require('telescope').setup {
     }
   },
   extensions = {
-    ["ui-select"] = {
-      require("telescope.themes").get_dropdown {
-      }
-    },
     fzf = {
       fuzzy = true,                    -- false will only do exact matching
       override_generic_sorter = true,  -- override the generic sorter
@@ -33,8 +29,6 @@ require('telescope').setup {
 -- To get fzf loaded and working with telescope, you need to call
 -- load_extension, somewhere after setup function:
 require('telescope').load_extension('fzf')
--- for dropdown
-require('telescope').load_extension('ui-select')
 EOF
 
 nnoremap <silent><leader>f <cmd>lua require('telescope.builtin').find_files()<cr>
