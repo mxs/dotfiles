@@ -40,9 +40,13 @@ inoremap jk <esc>
 vnoremap jk <esc>
 " esc in command mode
 cnoremap jk <esc>
-" noremap <silent> <leader>f :FZF<CR>
 nnoremap <F3> :set hlsearch!<CR>
 nnoremap <leader>so :so $NVIMINIT<CR>
+" easier movement between windows
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 "=======================================
 
 
