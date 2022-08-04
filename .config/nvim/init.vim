@@ -43,8 +43,6 @@ cnoremap jk <esc>
 " noremap <silent> <leader>f :FZF<CR>
 nnoremap <F3> :set hlsearch!<CR>
 nnoremap <leader>so :so $NVIMINIT<CR>
-nnoremap <C-w> :q<CR>
-nnoremap <C-W> :qa!<CR>
 "=======================================
 
 

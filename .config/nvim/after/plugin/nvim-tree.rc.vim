@@ -8,5 +8,5 @@ require("nvim-tree").setup({
 
 EOF
 
-nnoremap <silent><C-e> :NvimTreeToggle<cr>
-nnoremap <silent><C-d> :NvimTreeFindFile<cr>
+nnoremap <silent><C-n> :NvimTreeToggle<cr>
+"nnoremap <silent><C-N> :NvimTreeFindFile<cr>
