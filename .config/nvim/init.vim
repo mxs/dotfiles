@@ -23,11 +23,13 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'akinsho/toggleterm.nvim', { 'tag' : 'v2.*' }
+Plug 'sindrets/diffview.nvim'
+Plug 'lewis6991/gitsigns.nvim'
 "Plug 'karb94/neoscroll.nvim'
 
-Plug 'sainnhe/everforest'
-Plug 'sainnhe/sonokai'
-Plug 'ayu-theme/ayu-vim'
+" Plug 'sainnhe/everforest'
+" Plug 'sainnhe/sonokai'
+" Plug 'ayu-theme/ayu-vim'
 Plug 'dracula/vim'
 call plug#end()
 "======================================
@@ -90,6 +92,7 @@ set clipboard+=unnamedplus
 set noswapfile
 set completeopt=menu,menuone,noselect
 set guicursor+=a:blinkon0
+set fillchars+=diff:╱
 
 " lspconfig {{{
 lua << EOF
