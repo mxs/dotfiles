@@ -25,6 +25,7 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'akinsho/toggleterm.nvim', { 'tag' : 'v2.*' }
 Plug 'sindrets/diffview.nvim'
 Plug 'lewis6991/gitsigns.nvim'
+Plug 'tpope/vim-fugitive'
 "Plug 'karb94/neoscroll.nvim'
 
 " Plug 'sainnhe/everforest'
