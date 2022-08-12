@@ -49,7 +49,7 @@ function _NODE_TOGGLE()
 	node:toggle()
 end
 
-vim.keymap.set('n', '<leader>n', _NODE_TOGGLE, { silent = true, noremap = true })
+vim.keymap.set('n', '<leader>node', _NODE_TOGGLE, { silent = true, noremap = true })
 
 EOF
 
