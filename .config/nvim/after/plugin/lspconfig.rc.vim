@@ -12,8 +12,12 @@ local opts = { noremap=true, silent=true }
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
-  -- Enable completion triggered by <c-x><c-o>
-  --vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+
+  -- We are using prettier via null-ls for formatting
+  -- so we turn off tsserver formatting so do not get prompted for which server
+  if client.name == "tsserver" then                                                                                                   
+    client.resolved_capabilities.document_formatting = false
+  end
 
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
@@ -34,8 +38,12 @@ local on_attach = function(client, bufnr)
   --vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
 end
 
+-- for auto completion
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
 require('lspconfig')['tsserver'].setup{
     on_attach = on_attach,
+    capabilities = capabilities
 }
 
 local signs = {

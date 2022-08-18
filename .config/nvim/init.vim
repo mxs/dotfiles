@@ -10,6 +10,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
+Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'kyazdani42/nvim-web-devicons' 
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'folke/trouble.nvim'
