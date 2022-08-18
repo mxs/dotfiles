@@ -29,7 +29,7 @@ Plug 'sindrets/diffview.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'nvim-lualine/lualine.nvim'
-"Plug 'karb94/neoscroll.nvim'
+Plug 'karb94/neoscroll.nvim'
 
 " Plug 'sainnhe/everforest'
 " Plug 'sainnhe/sonokai'
