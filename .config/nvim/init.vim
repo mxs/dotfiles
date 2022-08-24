@@ -31,8 +31,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'karb94/neoscroll.nvim'
 
-" Plug 'sainnhe/everforest'
 " Plug 'sainnhe/sonokai'
+" Plug 'sainnhe/everforest'
 " Plug 'ayu-theme/ayu-vim'
 Plug 'dracula/vim'
 call plug#end()
@@ -44,8 +44,8 @@ let mapleader = " "
 " esc in insert and visual mode
 inoremap jk <esc>
 vnoremap jk <esc>
-" esc in command mode
 cnoremap jk <esc>
+
 nnoremap <F3> :set hlsearch!<CR>
 nnoremap <leader>so :so $NVIMINIT<CR>
 " easier movement between windows
@@ -53,13 +53,32 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+" no copy on delete
+nnoremap x "_x
+" move selected lines up and down
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+" resizing
+nnoremap <A-Up> :resize -2<CR>
+nnoremap <A-Down> :resize +2<CR>
+nnoremap <A-Left> :vertical resize -2<CR>
+nnoremap <A-Right> :vertical resize +2<CR>
+" holds on to visual mode after indent
+vnoremap < <gv 
+vnoremap > >gv 
+"=======================================
 "=======================================
 
-
-"====== Colours ======================
+"====== colours ======================
 if has('termguicolors')
   set termguicolors
 endif
+
+
 
 "let g:sonokai_style = 'atlantis'
 "let g:sonokai_better_performance = 1
