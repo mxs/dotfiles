@@ -30,6 +30,7 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'karb94/neoscroll.nvim'
+Plug 'goolord/alpha-nvim'
 
 " Plug 'sainnhe/sonokai'
 " Plug 'sainnhe/everforest'
