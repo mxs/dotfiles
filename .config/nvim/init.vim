@@ -50,7 +50,7 @@ cnoremap jk <esc>
 nnoremap <F3> :set hlsearch!<CR>
 nnoremap <leader>so :so $NVIMINIT<CR>
 " easier movement between windows
-nnoremap <C-h> <C-w>h
+nnoremap <C-k> <C-w>k
 nnoremap <C-j> <C-w>j
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
