@@ -31,6 +31,7 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'karb94/neoscroll.nvim'
 Plug 'goolord/alpha-nvim'
 Plug 'NoahTheDuke/vim-just'
+Plug 'ggandor/leap.nvim'
 
 " Plug 'sainnhe/sonokai'
 " Plug 'sainnhe/everforest'
