@@ -16,7 +16,7 @@ local on_attach = function(client, bufnr)
   -- We are using prettier via null-ls for formatting
   -- so we turn off tsserver formatting so do not get prompted for which server
   if client.name == "tsserver" then                                                                                                   
-    client.resolved_capabilities.document_formatting = false
+    client.server_capabilities.document_formatting = false
   end
 
   -- Mappings.
