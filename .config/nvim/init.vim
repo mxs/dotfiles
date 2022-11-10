@@ -3,7 +3,6 @@ call plug#begin()
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-"Plug 'nvim-telescope/telescope-ui-select.nvim',
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'neovim/nvim-lspconfig'
@@ -11,7 +10,8 @@ Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'kyazdani42/nvim-web-devicons' 
-Plug 'kyazdani42/nvim-tree.lua'
+Plug 'nvim-neo-tree/neo-tree.nvim'
+Plug 'MunifTanjim/nui.nvim'
 Plug 'folke/trouble.nvim'
 Plug 'windwp/nvim-autopairs'
 Plug 'tpope/vim-commentary'
@@ -119,8 +119,8 @@ set shiftwidth=2
 set expandtab
 set incsearch
 set cc=80
-set cursorline
-set cursorcolumn
+"set cursorline
+"set cursorcolumn
 set clipboard+=unnamedplus
 set noswapfile
 set completeopt=menu,menuone,noselect
