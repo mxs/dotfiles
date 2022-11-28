@@ -2,12 +2,8 @@ lua << EOF
 local null_ls = require("null-ls")
 local builtins = null_ls.builtins
 
-null_ls.setup({
-  sources = {
-    builtins.formatting.prettier,
-    --builtins.diagnostics.eslint_d
-  }
-})
+-- if you want to set up formatting on save, you can use this as a callback
+local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local lsp_formatting = function(bufnr)
     vim.lsp.buf.format({
@@ -18,9 +14,6 @@ local lsp_formatting = function(bufnr)
         bufnr = bufnr,
     })
 end
-
--- if you want to set up formatting on save, you can use this as a callback
-local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 -- add to your shared on_attach callback
 local on_attach = function(client, bufnr)
@@ -35,5 +28,14 @@ local on_attach = function(client, bufnr)
         })
     end
 end
+
+null_ls.setup({
+  sources = {
+    --builtins.formatting.prettier,
+    builtins.diagnostics.eslint_d,
+    builtins.formatting.eslint_d
+  },
+  on_attach = on_attach
+})
 
 EOF
