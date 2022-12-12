@@ -34,7 +34,7 @@ Plug 'goolord/alpha-nvim'
 Plug 'NoahTheDuke/vim-just'
 Plug 'ggandor/leap.nvim'
 Plug 'github/copilot.vim'
-
+Plug 'williamboman/mason.nvim'
 " Plug 'sainnhe/sonokai'
 " Plug 'sainnhe/everforest'
 " Plug 'ayu-theme/ayu-vim'
