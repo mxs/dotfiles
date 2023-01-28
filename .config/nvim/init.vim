@@ -6,7 +6,6 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'neovim/nvim-lspconfig'
-Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
 Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'kyazdani42/nvim-web-devicons' 
 "Plug 'kyazdani42/nvim-tree.lua'
@@ -34,6 +33,7 @@ Plug 'NoahTheDuke/vim-just'
 Plug 'ggandor/leap.nvim'
 Plug 'github/copilot.vim'
 Plug 'williamboman/mason.nvim'
+Plug 'stevearc/dressing.nvim'
 " Plug 'sainnhe/sonokai'
 " Plug 'sainnhe/everforest'
 " Plug 'ayu-theme/ayu-vim'
@@ -81,7 +81,6 @@ nnoremap <A-Right> :vertical resize +2<CR>
 " holds on to visual mode after indent
 vnoremap < <gv 
 vnoremap > >gv 
-"=======================================
 "=======================================
 
 "====== colours ======================
