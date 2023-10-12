@@ -1,3 +1,4 @@
 lua << EOF
-require('neoscroll').setup()
+require('neoscroll').setup({
+  easing_function =  'sine',
 EOF
