@@ -27,7 +27,7 @@ Plug 'sindrets/diffview.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'nvim-lualine/lualine.nvim'
-Plug 'karb94/neoscroll.nvim'
+"Plug 'karb94/neoscroll.nvim'
 Plug 'goolord/alpha-nvim'
 Plug 'NoahTheDuke/vim-just'
 Plug 'ggandor/leap.nvim'
@@ -37,7 +37,9 @@ Plug 'stevearc/dressing.nvim'
 " Plug 'sainnhe/sonokai'
 " Plug 'sainnhe/everforest'
 " Plug 'ayu-theme/ayu-vim'
-Plug 'dracula/vim'
+" Plug 'ayu-theme/ayu-vim'
+" Plug 'dracula/vim'
+Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
 call plug#end()
 "======================================
 
@@ -102,7 +104,7 @@ endif
 "let ayucolor="mirage"
 "colorscheme ayu
 
-colorscheme dracula
+colorscheme nordic
 "====================================
 
 
