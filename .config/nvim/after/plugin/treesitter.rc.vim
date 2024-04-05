@@ -12,7 +12,11 @@ require'nvim-treesitter.configs'.setup {
     "json",
     "yaml",
     "html",
-    "css"
+    "css",
+    "dockerfile",
+    "solidity",
+    "ruby",
+    "sql",
   },
 
   sync_install = false,
@@ -28,8 +32,8 @@ require'nvim-treesitter.configs'.setup {
     enable = true
   },
 
-  rainbow = {
-    enable = true
-  }
+  --rainbow = {
+  --  enable = true
+  --}
 }
 EOF
