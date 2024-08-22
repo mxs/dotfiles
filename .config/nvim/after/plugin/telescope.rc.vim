@@ -9,6 +9,9 @@ require('telescope').setup {
     find_files = {
       theme = 'dropdown'
     },
+    git_files = {
+      theme = 'dropdown'
+    },
     live_grep = {
       theme = 'dropdown'
     },
@@ -43,7 +46,8 @@ require('telescope').setup {
 require('telescope').load_extension('fzf')
 EOF
 
-nnoremap <silent><leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <silent><leader>ff <cmd>lua require('telescope.builtin').git_files()<cr>
+"nnoremap <silent><leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <silent><leader>fp <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <silent><leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <silent><leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
